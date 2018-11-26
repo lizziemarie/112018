@@ -431,6 +431,37 @@ function create_post_type_html5()
             'category'
         ) // Add Category and Post Tags support
     ));
+    register_post_type('projects', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Projects', 'project'), // Rename these to suit
+            'singular_name' => __('Project', 'project'),
+            'add_new' => __('Add New', 'project'),
+            'add_new_item' => __('Add New Project', 'project'),
+            'edit' => __('Edit', 'project'),
+            'edit_item' => __('Edit Project', 'project'),
+            'new_item' => __('New Project', 'project'),
+            'view' => __('View Project', 'project'),
+            'view_item' => __('View Project', 'project'),
+            'search_items' => __('Search Project', 'project'),
+            'not_found' => __('No Projects found', 'project'),
+            'not_found_in_trash' => __('No Projects found in Trash', 'project')
+        ),
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail'
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+        ) // Add Category and Post Tags support
+    ));
 }
 
 /*------------------------------------*\

@@ -30,7 +30,8 @@ html {
 	font-size:62.5%;
 }
 body {
-	font:300 11px/1.4 'Montserrat', sans-serif;;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1em;
 	color:#444;
 }
 /* clear */
@@ -151,6 +152,13 @@ h2 {
 	line-height: 52px;
 	margin: 0px 0px 20px 0px;
 	text-align: left;
+}
+h4 {
+	color: #333333;
+	font-size: 18px;
+	text-align: left;
+	text-transform: uppercase;
+	line-height: 40px;
 }
 
 nav li a{
