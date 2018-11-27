@@ -461,6 +461,7 @@ function create_post_type_html5()
             'post_tag',
             'category'
         ) // Add Category and Post Tags support
+
     ));
 }
 

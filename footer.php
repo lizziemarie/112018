@@ -14,8 +14,7 @@
 						<br>
 							<a href="https://www.instagram.com/lizziemariew/" target="_blank">Instagram,</a>
 							<a href="https://github.com/lizziemarie" target="_blank">Github,</a>
-							<a href="https://www.linkedin.com/in/elizabethmwillett/" target="_blank">LinkedIn,</a>
-							<a href="https://www.pinterest.com/lizziemariew/" target="_blank">Pinterest</a>
+							<a href="https://www.linkedin.com/in/elizabethmwillett/" target="_blank">LinkedIn</a>
 						</p>
 					</div>
 				</section>
@@ -24,8 +23,6 @@
 			</footer>
 			<!-- /footer -->
 
-		</div>
-		<!-- /subwrapper -->
 	</div>
 	<!-- /wrapper -->
 
