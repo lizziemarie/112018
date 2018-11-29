@@ -10,7 +10,9 @@
 		$query = new WP_Query( $args );?>
 		<?php if ( $query->have_posts()) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
-			<?php the_post_thumbnail();?>
+			<a href="<?php the_permalink(); ?>">
+				<?php the_post_thumbnail();?>
+			</a>
 				<p><?php echo( get_post_meta ( get_the_ID(), 'year', true))?></p>
 				<h3><?php the_title(); ?></h3>
 				<p><?php echo( get_post_meta ( get_the_ID(), 'project_type', true))?></p>

@@ -32,7 +32,7 @@ html {
 body {
 	font-family: 'Proza Libre', sans-serif;
 	font-size: 1em;
-	color:#444;
+	color:#333333;
 }
 /* clear */
 .clear:before,
@@ -90,19 +90,12 @@ body {
 	padding: 40px 20px 20px;
 }
 /* header */
-.header {
-}
-/* logo */
-.logo {
 
-}
+/* logo */
 .logo h2 {
 	text-align: center;
 }
 /* nav */
-.nav {
-
-}
 .nav ul {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -118,35 +111,57 @@ body {
 .nav li a {
 }
 
+.footer {
+	padding-top: 30px;
+}
 /*------------------------------------*\
     PAGES
 \*------------------------------------*/
 /* About */
 #about-section {
-	background-color: #FFF7F4;
-	display: grid;
-	grid-template-columns: 45% 55%;
-	padding:30px;
 }
 .about-image img{
 	width: 100%;
 	height: auto;
-	padding: 15% 15% 0% 5%;
+	padding: 5%;
 }
 .about-text {
 	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: auto;
-	padding: 10px 0px 0px 10px;
+	grid-template-columns: 45% 45%;
+	grid-column-gap: 8%;
 }
 
-#about-facts {
-	background-color: #FFF7F4;
-	display: grid;
-	grid-template-columns: auto;
+.fact-title {
+	font-family: 'Proza Libre', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: .5px;
+	text-align: center;
+	padding-bottom: 15px;
+}
+.fact-image img{
+	width: 100%;
+	height: auto;
+	padding: 5%;
 }
 
+/*single project page */
 
+.project-image img{
+	width: 100%;
+	height: auto;
+}
+.project-sub-title {
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 2em;
+	font-weight: 400;
+	padding: 5% 2%;
+	text-align: center;
+}
+.project-content {
+	color: #646464;
+}
+.project-link
 
 
 /*------------------------------------*\
@@ -169,7 +184,7 @@ h1 /*page intros*/ {
 }
 #about-facts h1 {
 	text-align: center;
-	padding: 0px 50px;
+	padding: 0px 5%;
 }
 h2 /* Main Nav Logo*/{
 	color: #1B1B25;
@@ -180,15 +195,20 @@ h2 /* Main Nav Logo*/{
 	line-height: 27px;
 	margin: 0px 0px 20px 0px;
 }
-h4 {
+h4 /*section titles of about, case study sections*/{
 	color: #333333;
-	font-size: 12px;
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 19px;
 	font-weight: 700;
-	line-height: 40px;
+	line-height: 24px;
 	letter-spacing: 1px;
-	margin: 10px 0px;
+	margin: 5px 0px;
 	text-align: left;
-	text-transform: uppercase;
+}
+p {
+	font-family: 'Proza Libre', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
 }
 
 nav li a /*nav items*/{
@@ -202,15 +222,6 @@ nav li a /*nav items*/{
 	text-transform: lowercase;
 }
 
-.about-text p {
-	color: #333333;
-	font-size: 18px;
-	font-weight: 300;
-	letter-spacing: .5px;
-	line-height: 22px;
-	text-align: left;
-	margin: 0 0 10px;
-}
 footer p {
 	font-size: 14px;
 	text-align: left;
@@ -299,6 +310,30 @@ footer p {
 	}
 	#footerthird3 {
 		justify-self: end;
+	}
+	/* ABOUT SECTION */
+	#about-section {
+		background-color: #FFF7F4;
+		display: grid;
+		grid-template-columns: 45% 55%;
+		padding:30px;
+	}
+	.about-image img{
+		width: 100%;
+		height: auto;
+		padding: 15% 15% 0% 5%;
+	}
+	.about-text {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: auto;
+		padding: 10px 0px 0px 10px;
+	}
+
+	#about-facts {
+		background-color: #FFF7F4;
+		display: grid;
+		grid-template-columns: auto;
 	}
 }
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),

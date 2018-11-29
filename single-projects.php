@@ -24,18 +24,30 @@ get_header();
         $size = "full";
         ?>
 
-      <div class="case-study-info">
-        <?php the_title(); ?>
-        <?php if($featured_img) {
-          echo wp_get_attachment_image( $featured_img, $size);
-        }?>
-        <?php echo $project_sub_title; ?>
-        <?php the_content(); ?>
-        <?php echo $view_project; ?>
-        <?php echo $team_title; ?>
-        <?php echo $team_members; ?>
-      </div>
-        <?php endwhile; // end of the loop. ?>
+        <h1><?php the_title(); ?></h1>
+        <div class="project-image">
+          <?php if($featured_img) {
+            echo wp_get_attachment_image( $featured_img, $size);
+          }?>
+        </div>
+        <div class="project-sub-title">
+          <?php echo $project_sub_title; ?>
+        </div>
+        <div class="project-content">
+          <?php the_content(); ?>
+        </div>
+
+        <!-- Next previous posts -->
+        <div class="project-nav">
+          <div class="previous project-link">
+            <span class="underline--magical"><?php previous_post_link('%link', 'Previous project'); ?></span>
+          </div>
+          <div class="next project-link">
+            <span class="underline--magical"><?php next_post_link('%link', 'Next project'); ?> </span>
+          </div>
+        </div>
+      <?php endwhile; // end of the loop. ?>
+
     </article>
 
   </main><!-- #main -->

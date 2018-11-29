@@ -26,6 +26,16 @@
       $fact8 = get_field('fact8');
       $fact9 = get_field('fact9');
 			$fact10 = get_field('fact10');
+			$fact1_title = get_field('fact1_title');
+      $fact2_title = get_field('fact2_title');
+      $fact3_title = get_field('fact3_title');
+			$fact4_title = get_field('fact4_title');
+      $fact5_title = get_field('fact5_title');
+      $fact6_title = get_field('fact6_title');
+			$fact7_title = get_field('fact7_title');
+      $fact8_title = get_field('fact8_title');
+      $fact9_title = get_field('fact9_title');
+			$fact10_title = get_field('fact10_title');
       $size = "full";
       ?>
 
@@ -62,36 +72,86 @@
 
 				<section id="about-facts">
 					<h1><?php echo $second_title_for_10_facts; ?></h1>
-					<?php if($fact1) {
+					<div class="fact-image">
+						<?php if($fact1) {
 						echo wp_get_attachment_image( $fact1, $size);
-					}?>
-					<?php if($fact2) {
-						echo wp_get_attachment_image( $fact2, $size);
-					}?>
-					<?php if($fact3) {
-						echo wp_get_attachment_image( $fact3, $size);
-					}?>
-					<?php if($fact4) {
-						echo wp_get_attachment_image( $fact4, $size);
-					}?>
-					<?php if($fact5) {
-						echo wp_get_attachment_image( $fact5, $size);
-					}?>
-					<?php if($fact6) {
-						echo wp_get_attachment_image( $fact6, $size);
-					}?>
-					<?php if($fact7) {
-						echo wp_get_attachment_image( $fact7, $size);
-					}?>
-					<?php if($fact8) {
-						echo wp_get_attachment_image( $fact8, $size);
-					}?>
-					<?php if($fact9) {
-						echo wp_get_attachment_image( $fact9, $size);
-					}?>
-					<?php if($fact10) {
-						echo wp_get_attachment_image( $fact10, $size);
-					}?>
+						}?>
+					</div>
+					<div class="fact-title">
+						<?php echo $fact1_title; ?>
+					</div>
+					<div class="fact-image">
+						<?php if($fact2) {
+							echo wp_get_attachment_image( $fact2, $size);
+						}?>
+					</div>
+					<div class="fact-title">
+						<?php echo $fact2_title; ?>
+					</div>
+					<div class="fact-image">
+						<?php if($fact3) {
+							echo wp_get_attachment_image( $fact3, $size);
+						}?>
+					</div>
+					<div class="fact-title">
+						<?php echo $fact3_title; ?>
+					</div>
+					<div class="fact-image">
+						<?php if($fact4) {
+							echo wp_get_attachment_image( $fact4, $size);
+						}?>
+					</div>
+					<div class="fact-title">
+						<?php echo $fact4_title; ?>
+					</div>
+					<div class="fact-image">
+						<?php if($fact5) {
+							echo wp_get_attachment_image( $fact5, $size);
+						}?>
+					</div>
+					<div class="fact-title">
+						<?php echo $fact5_title; ?>
+					</div>
+					<div class="fact-image">
+						<?php if($fact6) {
+							echo wp_get_attachment_image( $fact6, $size);
+						}?>
+					</div>
+					<div class="fact-title">
+						<?php echo $fact6_title; ?>
+					</div>
+					<div class="fact-image">
+						<?php if($fact7) {
+							echo wp_get_attachment_image( $fact7, $size);
+						}?>
+					</div>
+					<div class="fact-title">
+						<?php echo $fact7_title; ?>
+					</div>
+					<div class="fact-image">
+						<?php if($fact8) {
+							echo wp_get_attachment_image( $fact8, $size);
+						}?>
+					</div>
+					<div class="fact-title">
+						<?php echo $fact8_title; ?>
+					</div>
+					<div class="fact-image">
+						<?php if($fact9) {
+							echo wp_get_attachment_image( $fact9, $size);
+						}?>
+					</div>
+					<div class="fact-title">
+						<?php echo $fact9_title; ?>
+					</div>
+					<div class="fact-image">
+						<?php if($fact10) {
+							echo wp_get_attachment_image( $fact10, $size);
+						}?>
+					</div>
+					<div class="fact-title">
+						<?php echo $fact10_title; ?>
+					</div>
 				</section>
 			</article>
 			<!-- /article -->
