@@ -12,7 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,700|Proza+Libre:400,400i,700" rel="stylesheet">
 
 		<!--animate links-->
 		<link rel="stylesheet"
@@ -48,7 +48,7 @@
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<h2>lizzie marie</h2>
+							<h2>LIZZIE MARIE</h2>
 						</a>
 					</div>
 					<!-- /logo -->

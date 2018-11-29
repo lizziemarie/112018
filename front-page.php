@@ -3,23 +3,7 @@
 	<main role="main">
 		<!-- section -->
 		<section>
-			<h2>I am freelance user experience and visual designer, currently working in Seattle, Washington</h2>
-		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-
-			<!-- article -->
-			<article>
-				<br class="clear">
-
-			</article>
-			<!-- /article -->
-
-		<?php endwhile; ?>
-
-		<?php else: ?>
-
-			<!-- article -->
-
-		<?php endif; ?>
+			<h1> <span class="underline--magical">I am freelance user experience and visual designer, currently working in Seattle, Washington</span></h1>
 
 		<!-- testing -->
 		<?php $args = array( 'post_type' =>'projects', );
