@@ -23,19 +23,21 @@ get_header();
         $featured_img = get_field('featured_img');
         $size = "full";
         ?>
-
-        <h1 class="intro-blurb"><?php the_title(); ?></h1>
-        <div class="project-image">
-          <?php if($featured_img) {
-            echo wp_get_attachment_image( $featured_img, $size);
-          }?>
-        </div>
-        <div class="project-sub-title">
-          <?php echo $project_sub_title; ?>
-        </div>
-        <div class="project-content">
+        <section class="intro-section">
+          <h1 class="intro-blurb"><?php the_title(); ?></h1>
+          <div class="project-image">
+            <?php if($featured_img) {
+              echo wp_get_attachment_image( $featured_img, $size);
+            }?>
+          </div>
+          <div class="project-sub-title">
+            <?php echo $project_sub_title; ?>
+          </div>
+        </section>
+        
+        <section class="project-content">
           <?php the_content(); ?>
-        </div>
+        </section>
 
         <!-- Next previous posts -->
         <div class="project-nav">

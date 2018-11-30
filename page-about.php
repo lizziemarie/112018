@@ -41,9 +41,9 @@
 
 			<!-- article -->
 			<article>
-
-        <h1 class="intro-blurb"><?php echo $about_title; ?></h1>
-
+				<section class="intro-section">
+        	<h1 class="intro-blurb"><?php echo $about_title; ?></h1>
+				</section>
 				<br class="clear">
 
         <section id="about-section">
