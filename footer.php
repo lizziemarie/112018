@@ -4,17 +4,17 @@
 				<!-- copyright -->
 				<section id="footersection">
 					<div id="footerthird1">
-						<p><strong>Lizzie Marie</strong><br>is a UX/UI Designer</p>
+						<p><strong>Lizzie Marie</strong><br><span class="footer-mini">is a UX/UI Designer</span></p>
 					</div>
 					<div id="footerthird2">
-						<p><strong>Email</strong><br>hi(a)lizziemariew.com</p>
+						<p><strong>Email</strong><br><span class="footer-mini">hi(a)lizziemariew.com</span></p>
 					</div>
 					<div id="footerthird3">
 						<p><strong>Social</strong>
 						<br>
-							<a href="https://www.instagram.com/lizziemariew/" target="_blank">Instagram,</a>
-							<a href="https://github.com/lizziemarie" target="_blank">Github,</a>
-							<a href="https://www.linkedin.com/in/elizabethmwillett/" target="_blank">LinkedIn</a>
+							<a href="https://www.instagram.com/lizziemariew/" target="_blank" class="footer-mini">Instagram,</a>
+							<a href="https://github.com/lizziemarie" target="_blank" class="footer-mini">Github,</a>
+							<a href="https://www.linkedin.com/in/elizabethmwillett/" target="_blank" class="footer-mini">LinkedIn</a>
 						</p>
 					</div>
 				</section>

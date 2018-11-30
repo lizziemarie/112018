@@ -114,66 +114,71 @@ body {
 .footer {
 	padding-top: 30px;
 }
+/*about page*/
+.about-text {
+	display: grid;
+	grid-template-columns: 45% 45%;
+	grid-column-gap: 8%;
+}
+/*single project page*/
+.project-link {
+	margin-top: 30px;
+}
+.project-nav {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+.previous {
+	justify-self: start;
+}
+.next {
+	justify-self: end;
+}
 /*------------------------------------*\
     PAGES
 \*------------------------------------*/
-/* About */
-#about-section {
+
+
+
+
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+/*single project page */
+.project-image img{
+	width: 100%;
+	height: auto;
+}
+/* Home */
+.home-project-image img {
+	width: 100%;
+	height: auto;
+}
+/*About */
+.fact-image img{
+	width: 100%;
+	height: auto;
+	padding: 5%;
 }
 .about-image img{
 	width: 100%;
 	height: auto;
 	padding: 5%;
 }
-.about-text {
-	display: grid;
-	grid-template-columns: 45% 45%;
-	grid-column-gap: 8%;
-}
-
-.fact-title {
-	font-family: 'Proza Libre', sans-serif;
-	font-size: 14px;
-	font-weight: 400;
-	letter-spacing: .5px;
-	text-align: center;
-	padding-bottom: 15px;
-}
-.fact-image img{
-	width: 100%;
-	height: auto;
-	padding: 5%;
-}
-
-/*single project page */
-
-.project-image img{
-	width: 100%;
-	height: auto;
-}
-.project-sub-title {
-	font-family: 'Cormorant Garamond', serif;
-	font-size: 2em;
-	font-weight: 400;
-	padding: 5% 2%;
-	text-align: center;
-}
-.project-content {
-	color: #646464;
-}
-.project-link
-
-
-/*------------------------------------*\
-    IMAGES
-\*------------------------------------*/
-
-
 
 /*------------------------------------*\
 	TYPOGRAPHY
 \*------------------------------------*/
-h1 /*page intros*/ {
+h1 /*page intros*/{
+	color: #1B1B25;
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+	text-align: left;
+	margin: 20px 0px;
+}
+h1 span, h1.intro-blurb/*page intros*/{
 	color: #1B1B25;
 	font-family: 'Cormorant Garamond', serif;
 	font-size: 30px;
@@ -185,6 +190,14 @@ h1 /*page intros*/ {
 #about-facts h1 {
 	text-align: center;
 	padding: 0px 5%;
+}
+#about-facts p {
+	font-family: 'Proza Libre', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: .5px;
+	padding-bottom: 15px;
+	text-align: center;
 }
 h2 /* Main Nav Logo*/{
 	color: #1B1B25;
@@ -210,6 +223,27 @@ p {
 	font-size: 14px;
 	font-weight: 400;
 }
+/*single project page */
+.project-sub-title {
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 22px;
+	font-weight: 400;
+	padding: 5% 2%;
+	text-align: center;
+}
+.project-content {
+	color: #646464;
+	width: 95%;
+}
+.project-content p {
+	margin-top: 0px;
+}
+.project-link a{
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
 
 nav li a /*nav items*/{
 	color: #1B1B25;
@@ -223,6 +257,14 @@ nav li a /*nav items*/{
 }
 
 footer p {
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 20px;
+	text-align: left;
+	line-height: 24px;
+	color: #1B1B25;
+}
+footer .footer-mini {
+	font-family: 'Proza Libre', sans-serif;
 	font-size: 14px;
 	text-align: left;
 	line-height: 18px;
@@ -230,17 +272,23 @@ footer p {
 }
 
 /* highlight */
-
 .underline--magical {
-  background-image: linear-gradient(120deg, #F4D8D4 0%, #C26554 100%);
+  background-image: linear-gradient(120deg, #F4D8D4 0%, #F4D8D4 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.3em;
   background-position: 0 88%;
   transition: background-size 0.25s ease-in;
   &:hover {
     background-size: 100% 88%;
-  }
-}
+  } /*other color #C26554*/
+
+	/* about page */
+	.about-text {
+		display: grid;
+		grid-template-columns: 45% 45%;
+		grid-column-gap: 8%;
+	}
+
 /*------------------------------------*\
     RESPONSIVE
 \*------------------------------------*/
@@ -252,7 +300,14 @@ footer p {
 
 }
 @media only screen and (min-width:768px) {
-
+	/* wrapper */
+	.wrapper {
+		max-width: 700px;
+		width:100%;
+		margin: 0 auto;
+		position:relative;
+		padding: 40px 20px 20px;
+	}
 }
 @media only screen and (min-width:1024px) {
 

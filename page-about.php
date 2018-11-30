@@ -42,7 +42,7 @@
 			<!-- article -->
 			<article>
 
-        <h1><?php echo $about_title; ?></h1>
+        <h1 class="intro-blurb"><?php echo $about_title; ?></h1>
 
 				<br class="clear">
 
@@ -77,8 +77,8 @@
 						echo wp_get_attachment_image( $fact1, $size);
 						}?>
 					</div>
-					<div class="fact-title">
-						<?php echo $fact1_title; ?>
+					<div>
+						<p class="fact-title"><?php echo $fact1_title; ?></p>
 					</div>
 					<div class="fact-image">
 						<?php if($fact2) {
@@ -86,7 +86,7 @@
 						}?>
 					</div>
 					<div class="fact-title">
-						<?php echo $fact2_title; ?>
+						<p><?php echo $fact2_title; ?></p>
 					</div>
 					<div class="fact-image">
 						<?php if($fact3) {
@@ -94,7 +94,7 @@
 						}?>
 					</div>
 					<div class="fact-title">
-						<?php echo $fact3_title; ?>
+						<p><?php echo $fact3_title; ?></p>
 					</div>
 					<div class="fact-image">
 						<?php if($fact4) {
@@ -102,7 +102,7 @@
 						}?>
 					</div>
 					<div class="fact-title">
-						<?php echo $fact4_title; ?>
+						<p><?php echo $fact4_title; ?></p>
 					</div>
 					<div class="fact-image">
 						<?php if($fact5) {
@@ -110,7 +110,7 @@
 						}?>
 					</div>
 					<div class="fact-title">
-						<?php echo $fact5_title; ?>
+						<p><?php echo $fact5_title; ?></p>
 					</div>
 					<div class="fact-image">
 						<?php if($fact6) {
@@ -118,7 +118,7 @@
 						}?>
 					</div>
 					<div class="fact-title">
-						<?php echo $fact6_title; ?>
+						<p><?php echo $fact6_title; ?></p>
 					</div>
 					<div class="fact-image">
 						<?php if($fact7) {
@@ -126,7 +126,7 @@
 						}?>
 					</div>
 					<div class="fact-title">
-						<?php echo $fact7_title; ?>
+						<p><?php echo $fact7_title; ?></p>
 					</div>
 					<div class="fact-image">
 						<?php if($fact8) {
@@ -134,7 +134,7 @@
 						}?>
 					</div>
 					<div class="fact-title">
-						<?php echo $fact8_title; ?>
+						<p><?php echo $fact8_title; ?></p>
 					</div>
 					<div class="fact-image">
 						<?php if($fact9) {
@@ -142,7 +142,7 @@
 						}?>
 					</div>
 					<div class="fact-title">
-						<?php echo $fact9_title; ?>
+						<p><?php echo $fact9_title; ?></p>
 					</div>
 					<div class="fact-image">
 						<?php if($fact10) {
@@ -150,7 +150,7 @@
 						}?>
 					</div>
 					<div class="fact-title">
-						<?php echo $fact10_title; ?>
+						<p><?php echo $fact10_title; ?></p>
 					</div>
 				</section>
 			</article>

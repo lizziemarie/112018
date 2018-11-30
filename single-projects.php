@@ -24,7 +24,7 @@ get_header();
         $size = "full";
         ?>
 
-        <h1><?php the_title(); ?></h1>
+        <h1 class="intro-blurb"><?php the_title(); ?></h1>
         <div class="project-image">
           <?php if($featured_img) {
             echo wp_get_attachment_image( $featured_img, $size);
@@ -40,10 +40,10 @@ get_header();
         <!-- Next previous posts -->
         <div class="project-nav">
           <div class="previous project-link">
-            <span class="underline--magical"><?php previous_post_link('%link', 'Previous project'); ?></span>
+            <span class="underline--magical"><?php previous_post_link('%link', 'Previous Project'); ?></span>
           </div>
           <div class="next project-link">
-            <span class="underline--magical"><?php next_post_link('%link', 'Next project'); ?> </span>
+            <span class="underline--magical"><?php next_post_link('%link', 'Next Project'); ?> </span>
           </div>
         </div>
       <?php endwhile; // end of the loop. ?>

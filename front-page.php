@@ -3,14 +3,14 @@
 	<main role="main">
 		<!-- section -->
 		<section>
-			<h1> <span class="underline--magical">I am freelance user experience and visual designer, currently working in Seattle, Washington</span></h1>
+			<h1 class="intro-blurb"><span class="underline--magical">I am freelance user experience and visual designer, currently working in Seattle, Washington</span></h1>
 
-		<!-- testing -->
+		<!-- projects -->
 		<?php $args = array( 'post_type' =>'projects', );
 		$query = new WP_Query( $args );?>
 		<?php if ( $query->have_posts()) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
-			<a href="<?php the_permalink(); ?>">
+			<a href="<?php the_permalink(); ?>" class="home-project-image">
 				<?php the_post_thumbnail();?>
 			</a>
 				<p><?php echo( get_post_meta ( get_the_ID(), 'year', true))?></p>
