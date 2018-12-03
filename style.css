@@ -109,8 +109,8 @@ body {
 .nav li a {
 }
 
-.footer {
-	padding-top: 30px;
+#footersection {
+	padding-top: 2.2em;
 }
 /*about page*/
 .about-text {

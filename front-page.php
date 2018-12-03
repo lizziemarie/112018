@@ -3,7 +3,7 @@
 	<main role="main">
 		<!-- section -->
 		<section class="intro-section">
-			<h1 class="intro-blurb"><span class="underline--magical">Lizzie Willett is a freelance user experience and visual designer, currently working in Seattle, WA</span></h1>
+			<h1 class="intro-blurb"><span class="underline--magical"><?php echo get_bloginfo( 'description' ); ?></span></h1>
 		</section>
 		<!-- projects -->
 		<section class="projects-section">
