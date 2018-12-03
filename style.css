@@ -65,10 +65,8 @@ a:hover,
 a:active {
 	outline:0;
 }
-input:focus {
-	outline:0;
-	border:1px solid #04A4CC;
-}
+/* test a link hovering styling */
+
 
 /*------------------------------------*\
     STRUCTURE
@@ -337,12 +335,8 @@ body figcaption {
 	letter-spacing: 0.08em;
 }
 
-footer p {
-	font-family: 'Cormorant Garamond', serif;
-	font-size: 1.29em;
-	text-align: left;
-	line-height: 1.375em;
-	color: #1B1B25;
+#footersection {
+	font-size: .95rem;
 }
 footer .footer-mini {
 	font-family: 'Proza Libre', sans-serif;
@@ -379,7 +373,7 @@ footer .footer-mini {
 	/* header */
 	.header {
 		display: grid;
-		font-size: 1.01rem;
+		font-size: 0.9rem;
 		grid-template-columns: 1fr 2fr;
 	}
 	/* logo */
@@ -419,7 +413,6 @@ footer .footer-mini {
 	/* footer tablet*/
 	#footersection {
 		display: grid;
-		font-size: .8rem;
 		grid-template-columns: repeat(3,31.33%);
 		grid-column-gap: 2.99%;
 		padding-top: 3em;
@@ -476,14 +469,14 @@ footer .footer-mini {
 }
 
 /*Desktop styles here!*/
-@media only screen and (min-width:1280px) {
+@media only screen and (min-width:1100px) {
 	/* wrapper */
 	.wrapper {
 		max-width: 1000px;
 	}
 	/* header */
 	.header {
-		font-size: 1.1rem;
+		font-size: 0.95rem;
 	}
 	.intro-section {
 		font-size: 1.4rem;
@@ -497,7 +490,7 @@ footer .footer-mini {
 		grid-column-gap: 2em;
 	}
 	#footersection {
-		font-size: 1rem;
+		font-size: 1.1rem;
 	}
 	p #fact-title {
 		margin: 2em;
